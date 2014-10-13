@@ -19,7 +19,8 @@ module.exports = function (grunt) {
   // Configurable paths
   var config = {
     app: 'app',
-    dist: 'dist'
+    dist: 'dist',
+    src: 'src'
   };
 
   // Define the configuration for all the tasks
@@ -35,7 +36,7 @@ module.exports = function (grunt) {
         tasks: ['wiredep']
       },
       js: {
-        files: ['<%= config.app %>/scripts/{,*/}*.js'],
+        files: ['<%= config.app %>/scripts/{,*/}*.js', '<%= config.src %>/scripts/{,*/}*.js'],
         tasks: ['jshint'],
         options: {
           livereload: true
@@ -49,7 +50,7 @@ module.exports = function (grunt) {
         files: ['Gruntfile.js']
       },
       styles: {
-        files: ['<%= config.app %>/styles/{,*/}*.css'],
+        files: ['<%= config.app %>/styles/{,*/}*.css', '<%= config.src %>/styles/{,*/}*.css'],
         tasks: ['newer:copy:styles', 'autoprefixer']
       },
       livereload: {
