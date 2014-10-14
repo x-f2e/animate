@@ -7,18 +7,18 @@
 ```
 nodejs
 npm
-brower
+bower
 grunt-cli
 ```
 
 brower和grunt-cli需要全局安装
 ```
 npm install -g grunt-cli
-npm install -g brower
+npm install -g bower
 ```
 
 克隆代码后安装依赖
 ```
 npm install
-brower install
+bower install
 ```

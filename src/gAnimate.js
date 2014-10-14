@@ -1,2 +1,0 @@
-// gAnimate.js
-// coming soon
